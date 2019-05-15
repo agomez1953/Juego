@@ -24,4 +24,16 @@ class Carta:
         """
         return self.valor == other.valor and self.figura == other.figura
 
+    def baraja(self,figura,valor):
+        self.figura1 = figura
+        self.figura2 = figura
+        self.figura3 = figura
+        self.figura4 = figura
+
+        self.figura1 = 'Treboles'
+        self.figura2 = 'Picas'
+        self.figura3 = 'Corazones'
+        self.figura4 = 'Diamantes'
+    def recibir_carta(self):
+
 
