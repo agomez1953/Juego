@@ -1,5 +1,7 @@
 class Carta:
 
+    carta :int
+
     def __init__(self,valor,figura):
         """
         Esta funcion sirve como constructor
@@ -34,6 +36,9 @@ class Carta:
         self.figura2 = 'Picas'
         self.figura3 = 'Corazones'
         self.figura4 = 'Diamantes'
-    def recibir_carta(self):
-
-
+    def comparar(self):
+        if self.valor > 21:
+            print('Pierdes')
+        while(self.carta == 2):
+            if self.valor == 21:
+                print('BlackJack')
