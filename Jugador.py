@@ -16,8 +16,8 @@ class Jugador:
         Esta funcion es para imprimir cada uno de las cartas
         :return:
         """
-        return f'La carta es{self.nombre, self.dinero}'
+        return f'EL jugador es {self.nombre} y tiene { self.dinero} pesos'
 
     def pedir(self):
         while True:
-            Carta.baraja.pop(random.randint)
+            return True
