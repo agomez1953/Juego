@@ -1,3 +1,4 @@
+import random
 class Carta:
     """
     T = trebol
@@ -53,4 +54,5 @@ class Carta:
         while(self.carta == 2):
             if self.valor == 21:
                 print('BlackJack')
+
 
