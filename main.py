@@ -47,7 +47,7 @@ class main(QtGui.QMainWindow):
                           
 
     def hitClicked(self):
-        '''adds card to the ui showing the card that was just added to the hand'''
+        '''usuario que muestra la tarjeta que se acaba de agregar a la mano'''
         self.ui.btnDouble.setEnabled(False)
         hit(self.hands[1], self.shoe)
         
