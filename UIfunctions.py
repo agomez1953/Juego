@@ -3,9 +3,9 @@ import gamestart
 import gamefunctions
 import os
 
-def showcard (card_ui, carta):
+def showcard (card_ui, card):
     '''Takes the image of the card from the card class in gamestart  and shows it on the ui'''
-    image = QtGui.QPixmap.fromImage(carta.getgraphic())
+    image = QtGui.QPixmap.fromImage(card.getgraphic())
     pixmap = QtGui.QPixmap(image)
     card_ui.setPixmap(pixmap)
     card_ui.setHidden(False)
@@ -38,41 +38,41 @@ def betfunction(self):
         
     self.ui.btnBet.setEnabled(False)
     self.ui.labWarning.clear()
-    hidecards(self.mano_dealer, self.mano_jugador) #calls function to hide the card graphics in the ui
+    hidecards(self.dealer_hand, self.player_hand) #calls function to hide the card graphics in the ui    
         
     #Sets starting conditions of self.money and a starting self.shoe        
          
-    self.manos = gamefunctions.inicializar_cartas(self.aparato)
-    self.apuesta = [0] #list containing the initial bet and all bets for each hand
+    self.hands = gamefunctions.initial_cards(self.shoe)
+    self.bet = [0] #list containing the initial bet and all bets for each hand                                                 
     twenty_one = [False, False]
             
     #shows intial cards for dealer ui
-    showcard(self.ui.dCard, self.manos[0][0])
+    showcard(self.ui.dCard, self.hands[0][0])
     showback(self.ui.dCard_2)
         
     #shows initial cards for player in ui
-    for i in range(0, len(self.manos[1])):
-        showcard(self.mano_jugador[i], self.manos[1][i])
+    for i in range(0, len(self.hands[1])):
+        showcard(self.player_hand[i], self.hands[1][i])
             
-    self.apuesta = int(self.ui.lineBet.text())
-    self.dinero -= self.apuesta
-    self.ui.labMoney.setText(str(self.dinero))
+    self.bet = int(self.ui.lineBet.text())
+    self.money -= self.bet
+    self.ui.labMoney.setText(str(self.money))
         
         
-    self.ui.labDealer.setText(str(self.manos[0][0].getpunto()))
-    self.ui.labPlayer.setText(str(gamefunctions.puntos_mano(self.manos[1])))
+    self.ui.labDealer.setText(str(self.hands[0][0].getpoint()))
+    self.ui.labPlayer.setText(str(gamefunctions.hand_points(self.hands[1])))
     for i in range(0,2):
-        if gamefunctions.blackjack_dealer(self.manos[i]) == True:
+        if gamefunctions.dealt_blackjack(self.hands[i]) == True:
             twenty_one[i] = True
     if twenty_one != [False, False]:
-        self.ui.labDealer.setText(str(gamefunctions.puntos_mano(self.manos[0])))
-        showcard(self.mano_dealer[1], self.manos[0][1])
+        self.ui.labDealer.setText(str(gamefunctions.hand_points(self.hands[0])))
+        showcard(self.dealer_hand[1], self.hands[0][1])
         if twenty_one == [True, True]:                 #checks to see if both hands have blackjack
-            self.dinero += gamefunctions.ganancias(self.apuesta, 1)
+            self.money += gamefunctions.winnings(self.bet, 1)      
         elif twenty_one == [False, True]:                                         #check to see if the player has blackjack
-            self.dinero += int(gamefunctions.ganancias(self.apuesta, 2.5))
+            self.money += int(gamefunctions.winnings(self.bet, 2.5))
             
-        self.ui.labMoney.setText(str(self.dinero))
+        self.ui.labMoney.setText(str(self.money))
         buttoncontrol(self.ui)
                                                     #check to see if the dealer had blackjack
                 
