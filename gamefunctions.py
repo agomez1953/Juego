@@ -2,8 +2,10 @@ from gamestart import *
 base_deck = deck()
 
 def inicializar_cartas(aparato):
-    '''deals 2 cards to player and dealer returns dealer hand as
-    first hand player hand as second in a list'''
+
+    '''Funcion repartir 2 cartas al jugador y el reparto devuelve la mano del
+    repartidor como mano de primera mano como segundo en una lista'''
+
     mano_jugador = [repartir_carta(aparato)]
     mano_dealer = [repartir_carta(aparato)]
     mano_jugador.append(repartir_carta(aparato))
@@ -11,59 +13,68 @@ def inicializar_cartas(aparato):
     return [mano_dealer, mano_jugador]
 
 def blackjack_dealer(manos):
-    '''checks to see if either of the first hands dealt are blackjack'''
+
+    '''Funcion blackjack'''
+
     if puntos_mano(manos) == 21:
         return True
     else:
         return False        
 
 def split(mano, aparato):
-    '''if hand size is < 2, will add card else check for equal rank if
-    they will it will offer to split and then create append that to hands
-    update bet to represent this as well.  Returns 0 if no split else returns
-    the card'''
+
+    ''' funcion mano es menor a 2, agregara una tarjeta
+     Se ofrecera dividir y luego agregar eso a las manos
+     Actualizar apuesta para representar esto tambien
+     Devuelve 0 si no hay ninguna otra division devuelve la tarjeta'''
     
     if len(mano) == 2 and mano[0].getrango() == mano[1].getrango():
-        accion = input("Would you like to split?\n")
-        if accion == 'y':
+        accion = input("Te gustaria doblar?\n")
+        if accion == 'y' or 's':
             carta = mano.pop()
             hit(mano,aparato)
             return carta
     return 0
     
 def double(mano, aparato):
-    '''checks if player would like to double their bet and provides a hit'''
-    accion = input("Would you like to double? \n")
-    if accion == 'y':
+
+    '''Funcion que comprueba si el jugador quiere duplicar su apuesta y proporciona un hit'''
+
+    accion = input("Quieres doblar la apuesta? \n")
+    if accion == 'y' or 's':
         hit(mano, aparato)
         return 2
     else:
         return 0
 
 def hit(mano, aparato):
-    '''adds a card to the hand, performs a hit'''
+
+    '''funcion anadir una carta a la mano, realiza un hit'''
+
     mano.append(repartir_carta(aparato))
     return mano
        
 def dealer_play(mano_dealer, aparato):
-    '''lets dealer play with standard rule of hit on 16 stay on 17'''
+    '''funcion que le permite al dealer jugar con la regla estandar de hit en 16 se quedarse en 17'''
     total = puntos_mano(mano_dealer)
     
     if total < 17:
         mano_dealer=(hit(mano_dealer, aparato))
-        dealer_play(mano_dealer, aparato)       #recurrsive call to hit again
+        dealer_play(mano_dealer, aparato)
         
     else:
         return
 
 def puntos_mano(mano):
-    '''gives the value of the hand'''
+
+    '''Funcion valor mano'''
+
     total = 0
     for cartas in mano:
-        total += cartas.getpunto()   #gets values for cards
+        total += cartas.getpunto()   #elaluar metodos gets a cartas
 
     if total > 21:
-        for cartas in mano:   #makes ace =1 if 21 is overshot
+        for cartas in mano:
             if cartas.getrango() == 'A':
                 total -= 10
                 if total <= 21:
@@ -72,9 +83,11 @@ def puntos_mano(mano):
     return total
 
 def calculos(dealer, player, aparato):
-    '''calculates the values for each hand and returns the rate of return of the hand'''
+
+    '''calcula los valores para cada mano y devuelve la tasa de retorno de la mano'''
+
     player_total = puntos_mano(player)
-    if player_total > 21:  #lose condition
+    if player_total > 21:
         return 0
 
     else:
@@ -83,13 +96,15 @@ def calculos(dealer, player, aparato):
         
         if dealer_total > 21:
             return 2
-        elif dealer_total < player_total: #win condition
+        elif dealer_total < player_total:
             return 2
-        elif dealer_total == player_total:  #push condition
+        elif dealer_total == player_total:
             return 1
-        else:  #lose conition
+        else:
             return 0
         
 def ganancias(apuesta, rate):
-    '''Updates the amount of money the player has based on how much they won'''
+
+    '''Actualiza la cantidad de dinero que el jugador tiene y  gano'''
+
     return apuesta * rate
