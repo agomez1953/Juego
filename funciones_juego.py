@@ -1,5 +1,5 @@
-from gamestart import *
-base_deck = deck()
+from  mesa import *
+base_baraja = Baraja()
 
 def inicializar_cartas(aparato):
 
