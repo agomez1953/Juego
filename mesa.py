@@ -1,18 +1,18 @@
 class Carta(object):
-    def __init__(self, rank, suit, points, graphic):
-        self.rank = rank
-        self.suit = suit
-        self.points = points
+    def __init__(self, rango, pinta, puntos, graphic):
+        self.rango = rango
+        self.pinta = pinta
+        self.puntos = puntos
         self.graphic = graphic
         
     def __repr__(self):
-        return self.suit + self.rank
+        return self.pinta + self.rango
 
     def getpunto (self):
-        return int(self.points)
+        return int(self.puntos)
 
     def getrango(self):
-        return str(self.rank)
+        return str(self.rango)
 
     def getgraphic(self):
         return self.graphic
@@ -24,15 +24,15 @@ def Baraja():
     from PyQt4 import QtGui
     import os
 
-    rank = {'A': 11, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9, '10': 10, 'J': 10, 'Q': 10, 'K': 10}
-    suit = ['P', 'C', 'D', 'T']
+    rango = {'A': 11, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9, '10': 10, 'J': 10, 'Q': 10, 'K': 10}
+    pinta = ['P', 'C', 'D', 'T']
 
     new_baraja = []
     path = os.getcwd()  # metodo get el directorio actual para usar para encontrar la imagen de las tarjetas.
-    for key in rank:
-        for s in suit:
+    for key in rango:
+        for s in pinta:
             image = QtGui.QImage(path + '/cartas/' + s + key + '.png')
-            new_baraja.append(Carta(str(key), s, rank[key], image))
+            new_baraja.append(Carta(str(key), s, rango[key], image))
     return new_baraja
 
 def crear_aparato(Baraja, size):
