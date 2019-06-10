@@ -30,7 +30,7 @@ def hidecards(list1,list2):
 def buttoncontrol(ui):
     '''establece todos los botones a las condiciones iniciales con las apuestas como la unica opcion'''
     ui.btnHit.setEnabled(False)
-    # ui.btnDouble.setEnabled(False)
+    ui.btnDouble.setEnabled(False)
     ui.btnStay.setEnabled(False)      
     ui.btnBet.setEnabled(True)
     ui.btnIni.setEnabled(False)
@@ -77,5 +77,5 @@ def betfunction(self):
 
     else:
         self.ui.btnHit.setEnabled(True)
-        # self.ui.btnDouble.setEnabled(True)
+        self.ui.btnDouble.setEnabled(True)
         self.ui.btnStay.setEnabled(True)

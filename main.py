@@ -15,7 +15,7 @@ class main(QtGui.QMainWindow):
         self.ui.btnBet.clicked.connect(self.betClick)
         self.ui.btnStay.clicked.connect(self.stayClicked)
         self.ui.btnIni.clicked.connect(self.iniClick)
-        # self.ui.btnDouble.clicked.connect(self.doubleClicked)
+        self.ui.btnDouble.clicked.connect(self.doubleClicked)
         self.ui.btnHit.clicked.connect(self.hitClick)
         
         self.Baraja = Baraja()
@@ -26,7 +26,9 @@ class main(QtGui.QMainWindow):
         self.ui.labMoney.setText(str(self.dinero))
         self.manos = []
         self.apuesta = 0
-        
+
+        if (self.dinero==0 and self.apuesta==0):
+            self.ui.btnIni.clicked.connect(self.iniClick)
 
         self.mano_dealer = [self.ui.dCard, self.ui.dCard_2, self.ui.dCard_3, self.ui.dCard_4, self.ui.dCard_5, self.ui.dCard_6, self.ui.dCard_7, self.ui.dCard_8, self.ui.dCard_9, self.ui.dCard_10]
         self.mano_jugador = [self.ui.pCard, self.ui.pCard_2, self.ui.pCard_3, self.ui.pCard_4, self.ui.pCard_5, self.ui.pCard_6, self.ui.pCard_7, self.ui.pCard_8, self.ui.pCard_9, self.ui.pCard_10]
@@ -53,7 +55,7 @@ class main(QtGui.QMainWindow):
 
         '''usuario que muestra la tarjeta que se acaba de agregar a la mano'''
 
-        # self.ui.btnDouble.setEnabled(False)
+        self.ui.btnDouble.setEnabled(False)
         hit(self.manos[1], self.aparato)
         i = len(self.manos[1])-1
         showcard(self.mano_jugador[i], self.manos[1][i])
@@ -80,18 +82,18 @@ class main(QtGui.QMainWindow):
         buttoncontrol(self.ui)
 
 
-    # def doubleClicked(self):
-    #
-    #     '''maneja el caso donde el jugador duplica la apuesta agregando a la apuesta y obteniendo una carta mas'''
-    #
-    #     self.dinero -= self.apuesta
-    #     self.apuesta *= 2
-    #     self.ui.labMoney.setText(str(self.dinero))
-    #     hit(self.manos[1],self.aparato)
-    #     i = len(self.manos[1])-1
-    #     showcard(self.mano_jugador[i], self.manos[1][i])
-    #     self.ui.labPlayer.setText(str(puntos_mano(self.manos[1])))
-    #     self.stayClicked()
+    def doubleClicked(self):
+
+        '''maneja el caso donde el jugador duplica la apuesta agregando a la apuesta y obteniendo una carta mas'''
+
+        self.dinero -= self.apuesta
+        self.apuesta *= 2
+        self.ui.labMoney.setText(str(self.dinero))
+        hit(self.manos[1],self.aparato)
+        i = len(self.manos[1])-1
+        showcard(self.mano_jugador[i], self.manos[1][i])
+        self.ui.labPlayer.setText(str(puntos_mano(self.manos[1])))
+        self.stayClicked()
         
     
     def stayClicked(self):
