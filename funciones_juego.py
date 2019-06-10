@@ -59,7 +59,7 @@ def dealer_play(mano_dealer, aparato):
     total = puntos_mano(mano_dealer)
     
     if total < 17:
-        mano_dealer=(hit(mano_dealer, aparato))
+        mano_dealer = (hit(mano_dealer, aparato))
         dealer_play(mano_dealer, aparato)
         
     else:
