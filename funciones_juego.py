@@ -1,4 +1,4 @@
-from  mesa import *
+from mesa import *
 base_baraja = Baraja()
 
 def inicializar_cartas(aparato):
@@ -32,7 +32,7 @@ def split(mano, aparato):
         accion = input("Te gustaria doblar?\n")
         if accion == 'y' or 's':
             carta = mano.pop()
-            hit(mano,aparato)
+            hit(mano, aparato)
             return carta
     return 0
     

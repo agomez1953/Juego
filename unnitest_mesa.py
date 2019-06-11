@@ -4,13 +4,23 @@ from mesa import *
 class Testmesa(TestCase):
 
     def test_getpunto(self):
-        pass
+        dado = Carta('A', 'P', 500, '')
+        espero = 500
+        recibo = dado.getpunto()
+        self.assertEqual(espero, recibo)
+
 
     def test_getrango(self):
-        pass
+        dado = Carta('A', 'P', 500, '')
+        espero = 'A'
+        recibo = dado.getrango()
+        self.assertEqual(espero, recibo)
 
     def test_getgrapic(self):
-        pass
+        dado = Carta('A', 'P', 500, '')
+        espero = ''
+        recibo = dado.getgraphic()
+        self.assertEqual(espero, recibo)
 
     def test_Baraja(self):
         pass

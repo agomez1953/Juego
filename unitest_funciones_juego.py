@@ -4,8 +4,10 @@ from funciones_juego import *
 class Testfunciones_juego(TestCase):
 
     def test_inicializar_cartas(self):
-        dado = Baraja()
-        print({dado.estado})
+        dado = Instrumentos('Violonchelo', 'cuerdas', 4)
+        espero = 'el instrumento Violonchelo es de cuerdas, tiene afinacion fa y melodia jazz'
+        recibo = dado.clas_instrumento('fa', 'jazz')
+        self.assertEqual(espero, recibo)
 
     def test_blackjack_dealer(self):
        pass

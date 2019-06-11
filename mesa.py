@@ -42,7 +42,7 @@ def crear_aparato(Baraja, size):
 
     aparato = {}
     for carta in Baraja:
-        aparato[carta]= size
+        aparato[carta] = size
     return aparato
 
 def repartir_carta(aparato):
