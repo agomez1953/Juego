@@ -1,12 +1,13 @@
 from unittest import TestCase
 from funciones_juego import *
+from mesa import *
 
 class Testfunciones_juego(TestCase):
 
     def test_inicializar_cartas(self):
-        dado = Instrumentos('Violonchelo', 'cuerdas', 4)
-        espero = 'el instrumento Violonchelo es de cuerdas, tiene afinacion fa y melodia jazz'
-        recibo = dado.clas_instrumento('fa', 'jazz')
+        dado = ()
+        espero = ''
+        recibo = dado.inicializacion_cartas()
         self.assertEqual(espero, recibo)
 
     def test_blackjack_dealer(self):
