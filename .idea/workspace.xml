@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4343f0b-c3ca-4515-bc13-8b2358a47959" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/funciones_juego.py" beforeDir="false" afterPath="$PROJECT_DIR$/funciones_juego.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mesa.py" beforeDir="false" afterPath="$PROJECT_DIR$/mesa.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/unitest_funciones_juego.py" beforeDir="false" afterPath="$PROJECT_DIR$/unitest_funciones_juego.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/unnitest_mesa.py" beforeDir="false" afterPath="$PROJECT_DIR$/unnitest_mesa.py" afterDir="false" />
@@ -14,14 +15,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.45918366">
+    <splitter split-orientation="horizontal" split-proportion="0.49464285">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/unitest_funciones_juego.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+                <state relative-caret-position="129">
+                  <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
                   <folding>
                     <element signature="e#0#29#0" expanded="true" />
                   </folding>
@@ -33,19 +34,7 @@
             <entry file="file://$PROJECT_DIR$/unitest_main.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="102">
-                  <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-                  <folding>
-                    <element signature="e#0#29#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/unnitest_mesa.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="188">
-                  <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+                  <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
                   <folding>
                     <element signature="e#0#29#0" expanded="true" />
                   </folding>
@@ -54,10 +43,13 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/mesa.py">
+            <entry file="file://$PROJECT_DIR$/unnitest_mesa.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" selection-start-line="12" selection-end-line="12" />
+                <state relative-caret-position="307">
+                  <caret line="33" column="21" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="47" />
+                  <folding>
+                    <element signature="e#0#29#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -65,7 +57,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/funciones_juego.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1225">
+                <state relative-caret-position="426">
                   <caret line="107" column="38" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="38" />
                 </state>
               </provider>
@@ -74,21 +66,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/funciones_juego.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-153">
-                  <caret line="36" column="12" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/mesa.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="43" column="24" lean-forward="true" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+                <state relative-caret-position="1819">
+                  <caret line="107" column="38" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="38" />
                 </state>
               </provider>
             </entry>
@@ -96,8 +79,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/main.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1326">
-                  <caret line="105" column="4" selection-start-line="105" selection-start-column="4" selection-end-line="105" selection-end-column="4" />
+                <state relative-caret-position="544">
+                  <caret line="79" column="37" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
                   <folding>
                     <element signature="e#0#10#0" expanded="true" />
                   </folding>
@@ -147,17 +130,17 @@
         <option value="$PROJECT_DIR$/Baraja.py" />
         <option value="$PROJECT_DIR$/test_baraja.py" />
         <option value="$PROJECT_DIR$/UIcomplilacion.py" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/blackjackui.py" />
-        <option value="$PROJECT_DIR$/unitest_funciones_juego.py" />
-        <option value="$PROJECT_DIR$/unnitest_mesa.py" />
-        <option value="$PROJECT_DIR$/mesa.py" />
         <option value="$PROJECT_DIR$/unitest_main.py" />
         <option value="$PROJECT_DIR$/funciones_juego.py" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/mesa.py" />
+        <option value="$PROJECT_DIR$/unnitest_mesa.py" />
+        <option value="$PROJECT_DIR$/unitest_funciones_juego.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="49" />
     <option name="y" value="25" />
     <option name="width" value="1162" />
@@ -185,7 +168,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/unnitest_mesa.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/unitest_funciones_juego.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -200,7 +183,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python tests.Unittests in unitest_funciones_juego.py">
     <configuration name="Carta" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Juego" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -306,6 +289,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="mesa" type="PythonConfigurationType" factoryName="Python">
+      <module name="Juego" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python34\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mesa.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittestmesa" type="tests" factoryName="Unittests">
       <module name="Juego" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -321,13 +325,30 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in unitest_funciones_juego.py" type="tests" factoryName="Unittests" nameIsGenerated="true">
+      <module name="Juego" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="C:\Python34\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/unitest_funciones_juego.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Python.mesa" />
       <item itemvalue="Python.Carta" />
       <item itemvalue="Python.Jugador" />
       <item itemvalue="Python.main" />
       <item itemvalue="Python.Probador_carta" />
       <item itemvalue="Python.Probador_jugador" />
       <item itemvalue="Python tests.Unittestmesa" />
+      <item itemvalue="Python tests.Unittests in unitest_funciones_juego.py" />
     </list>
     <recent_temporary>
       <list>
@@ -353,52 +374,53 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittestmesa - 2019.06.10 at 21h 20m 48s.xml">
+    <history-entry file="Unittestmesa - 2019.06.11 at 14h 23m 11s.xml">
       <configuration name="Unittestmesa" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittestmesa - 2019.06.10 at 21h 22m 29s.xml">
+    <history-entry file="Unittestmesa - 2019.06.11 at 14h 24m 11s.xml">
       <configuration name="Unittestmesa" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittestmesa - 2019.06.10 at 21h 22m 58s.xml">
+    <history-entry file="Unittestmesa - 2019.06.11 at 14h 24m 41s.xml">
       <configuration name="Unittestmesa" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittestmesa - 2019.06.10 at 21h 23m 31s.xml">
+    <history-entry file="Unittestmesa - 2019.06.11 at 14h 26m 49s.xml">
       <configuration name="Unittestmesa" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittestmesa - 2019.06.10 at 21h 23m 37s.xml">
+    <history-entry file="Unittestmesa - 2019.06.11 at 14h 27m 06s.xml">
       <configuration name="Unittestmesa" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittestmesa - 2019.06.10 at 21h 24m 35s.xml">
+    <history-entry file="Unittestmesa - 2019.06.11 at 14h 27m 19s.xml">
       <configuration name="Unittestmesa" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittestmesa - 2019.06.10 at 21h 24m 57s.xml">
+    <history-entry file="Unittestmesa - 2019.06.11 at 14h 30m 50s.xml">
       <configuration name="Unittestmesa" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittestmesa - 2019.06.10 at 21h 25m 32s.xml">
+    <history-entry file="Unittestmesa - 2019.06.11 at 14h 31m 06s.xml">
       <configuration name="Unittestmesa" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittestmesa - 2019.06.10 at 21h 25m 41s.xml">
+    <history-entry file="Unittestmesa - 2019.06.11 at 14h 31m 23s.xml">
       <configuration name="Unittestmesa" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittestmesa - 2019.06.10 at 21h 26m 12s.xml">
+    <history-entry file="Unittestmesa - 2019.06.11 at 14h 31m 45s.xml">
       <configuration name="Unittestmesa" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19431987" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16292974" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32872504" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32872504" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3987441" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32411674" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.16589862" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32967034" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3286385" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -450,19 +472,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/unitest_funciones_juego.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UIcomplilacion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1344">
+        <state relative-caret-position="355">
           <caret line="80" column="40" selection-start-line="80" selection-start-column="40" selection-end-line="80" selection-end-column="40" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
@@ -472,17 +484,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mesa.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="748">
+          <caret line="56" column="29" lean-forward="true" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="105" column="4" selection-start-line="105" selection-start-column="4" selection-end-line="105" selection-end-column="4" />
+        <state relative-caret-position="544">
+          <caret line="79" column="37" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/funciones_juego.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="107" column="38" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/unnitest_mesa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -490,24 +519,17 @@
     <entry file="file://$PROJECT_DIR$/unitest_main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/funciones_juego.py">
+    <entry file="file://$PROJECT_DIR$/unitest_funciones_juego.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1225">
-          <caret line="107" column="38" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unnitest_mesa.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="129">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>

@@ -89,7 +89,7 @@ class main(QtGui.QMainWindow):
         self.dinero -= self.apuesta
         self.apuesta *= 2
         self.ui.labMoney.setText(str(self.dinero))
-        hit(self.manos[1],self.aparato)
+        hit(self.manos[1], self.aparato)
         i = len(self.manos[1])-1
         showcard(self.mano_jugador[i], self.manos[1][i])
         self.ui.labPlayer.setText(str(puntos_mano(self.manos[1])))

@@ -37,13 +37,14 @@ def Baraja():
 
 def crear_aparato(Baraja, size):
 
-    '''funcion que crea mazos de numeros de tamano en un zapato de blackjack en forma de diccionario con la cadena de la Tarjeta
+    '''funcion que crea mazos de numeros de tamano en un aparato de blackjack en forma de diccionario con la cadena de la Tarjeta
      y el numero de la carta que queda en el mazo'''
 
     aparato = {}
     for carta in Baraja:
         aparato[carta] = size
     return aparato
+
 
 def repartir_carta(aparato):
 
